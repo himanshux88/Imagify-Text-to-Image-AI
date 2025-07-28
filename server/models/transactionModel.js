@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import payments from "razorpay/dist/types/payments";
 
 const transactionSchema = new mongoose.Schema({
   userId: {
