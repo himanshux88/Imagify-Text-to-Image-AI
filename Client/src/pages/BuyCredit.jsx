@@ -36,7 +36,7 @@ const BuyCredit = () => {
        }
       },
     };
-    const rzp = new window.Razoppay(options);
+    const rzp = new window.Razorpay(options);
     rzp.open();
   };
   const paymentRazorpay = async (planId) => {

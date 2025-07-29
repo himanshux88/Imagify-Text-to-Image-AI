@@ -133,7 +133,7 @@ export const paymentRazorpay = async (req, res) => {
 
     const transactionData = { userId, plan, amount, credits, date };
 
-    const newTransaction = new transactionModel.create(transactionData);
+    const newTransaction = await transactionModel.create(transactionData);
     const options = {
       amount: amount * 100,
       currency: process.env.CURRENCY,
